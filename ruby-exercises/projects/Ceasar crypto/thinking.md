@@ -14,13 +14,16 @@ caesar_cipher("What a string!", right ,5)
 ```
 **added the direction for the funzyz**
 
-## The plan
+## TODOS
 
-To do it we have to do a couple things
+`main function`  
 - Get every character in the string ( only the letters)
-- modify the value of the ´jump´ depending on if the shift is left or right 
-- Need to find a way so that if a character is an uppercase it will convert it to a lower case
-do the thing, then reconvert it back..
+- Need to find a way so that if a character is an uppercase it will convert it to a lower case then back to upcase
+- Don't forget the error handling :D
+
+
+`character shift`  
+- modify the value of the ´jump´ depending on if the shift is left or right
 - for each of those characters, take their ASCII num and shift left or right
   - If the result will be below the minimum ASCII num (97 : "a"),
   doing ´MIN % num´ will give me the difference between the two and I will be able to use that to 
@@ -28,4 +31,5 @@ do the thing, then reconvert it back..
   to get the final ASCII value
   - else if the res is above the maximum value I will do the same but diff will be obtained by ´num % MAX
   and I will have to add this diff to the MIN value to get the final ASCII value
+
 
