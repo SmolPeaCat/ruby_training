@@ -6,9 +6,7 @@ def substrings(str, dict)
   arr.each do |word|
     dict.each do |sub|
       sub = sub.downcase
-      p final_res
       final_res[sub] += 1 if word.include?(sub)
-      p final_res
     end
   end
   final_res
